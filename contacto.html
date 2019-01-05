@@ -10,45 +10,47 @@
 </head>
 
 <body>
-	
+
 <nav id="navbar">
 	<div class="myicono"><i class="fas fa-bars"></i></div>
 	<ul class="lista-sm">
 	<li><a href="index.html">Inicio</a></li>
-	<li><a href="servicio.html">Servicio</a></li>	
-	<li><a href="acercade.html">Acerda de</a></li>	
-	<li><a href="contacto.html">Contacto</a></li>	
+	<li><a href="servicio.html">Servicio</a></li>
+	<li><a href="acercade.html">Acerda de</a></li>
+	<li><a href="contacto.html">Contacto</a></li>
 	</ul>
-	
-	</nav>	
-	
+
+	</nav>
+
 	<div id="content">
-	
-	
-	
-	<section id="principal"> 
+
+
+
+	<section id="principal">
 	<h2>Contacto</h2>
-		Formulario de contacto		
-		<form>
-		<div>Nombre:<input type="text" name="nombre"></div>
-		<div>Email:<input type="email" name="email"></div>
-		<div><button type="button" name="boton">Enviar mensaje</button></div>	
+		Formulario de contacto
+		<form action="enviar.php" method="post">
+		<div>Nombre:<input type="text" name="nombre" required></div>
+		<div>Email:<input type="text" name="correo" required></div>
+		<div>Telefono:<input type="text" name="telefono" required></div>
+     <textarea name="mensaje" required></textarea>
+		<div> <input type="submit" id="boton" value="ENVIAR"> </div>
 		</form>
-		
+
 	</section>
-	
-	
-	
+
+
+
 	<footer>
 	<p align="center">Copyright (c) 2017</p>
-	
+
 	</footer>
-	
+
 	</div>
-	
-	
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="scrip.js"></script>
-	
+
 </body>
 </html>
